@@ -15,80 +15,118 @@ STEP 1: Add the required HTML5 skeleton
     <!-- =========================================================
     STEP 2: Build the “top area” (site name + navigation) using simple HTML
     ========================================================= -->
-  <body>
-    <header>
-      <h2>Prague Travel Guide</h2>
-      <nav>
-        <ul>
-          <li><a href="#">Activities</a></li>
-          <li><a href="#">Food</a></li>
-          <li><a href="#">Drink</a></li>
-        </ul>
+  <body class="body">
+    <header class="site-header">
+      <div class="container header-inner">
+      <h2 class="brand">PRAGUE TRAVEL GUIDE <span class="dot">.</span></h2>
+      <nav class="site-nav">
+         <a href="#">Activities</a>
+         <a href="#">Food</a>
+         <a href="#">Drink</a>
       </nav>
+      </div>
     </header>
 
     <!-- =========================================================
     STEP 3: Hero section + “Get Started button” as a link
     ========================================================= -->
     <main>
-      <section>
-        <h1>Prague, Czech Republic Travel Guide</h1>
-          <p>The places I loved most during my semester abroad in Prague.</p>
-        <a href="#">Get Started</a>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>PRAGUE, CZECH REPUBLIC TRAVEL GUIDE</h1>
+          <p class ="hero-subhead">The places I loved most during my semester abroad in Prague.</p>
+        <a href ="#" class="btn btn-dark">Get Started</a>
+         <a href ="#" class="btn btn-outline">Get Started</a>
+        </div>
       </section>
 
     <!-- =========================================================
     STEP 4: Features section (3 blocks) + featured content section
     ========================================================= -->
 
-      <section>
-        <h2>Features </h2>
-          <p>Here are my top tips and recommendations for food, drinks, and activities in the city. </p>
+      <section class=" container features">
 
-        <h3>Activities</h3>
-          <p>From watching the sunrise at Charles Bridge to paddling down the Vltava River, these are the activities that made me fall in love with Prague. </p>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="icon">💃</div>
+            <h3>Activities</h3>
+            <p>From watching the sunrise at Charles Bridge to paddling down Vltava River, these activities made me fall in love with Prague. </p>
+          </div>
+          
+         <div class="feature"> 
+          <div class="icon">🍲</div>
+            <h3>Food</h3>
+            <p>Where to find traditional Czech food, cozy brunch cafes, and the places I went back to again and again.</p>
+          </div>
 
-        <h3>Food</h3>
-          <p>Where to find traditional Czech food, cozy brunch cafes, and the places I went back to again and again.</p>
-
+        <div class="feature">
+          <div class="icon">🍺</div>
         <h3>Drink</h3>
           <p>Historic pubs, rooftop views, and the best places for a night out.</p>
-      </section>
+        </div>
 
-      <section>
-        <h2>Featured content</h2>
-        <p>Prague Castle overlooks the city and offers some of the best views in Prague. With historic buildings, open courtyards, and stunning architecture, it's a must-see stop for any visit.</p>
-        <img src="images/praguecastle.JPEG" alt="prague castle" width="500" height="650">
+      </section>
+        </div>
+
+      <section class="featured">
+        <div class="container">
+        <h2 class="section-title">Featured content</h2>
+        <p class="section-lede">Prague Castle overlooks the city and offers some of the best views in Prague. With historic buildings, open courtyards, and stunning architecture, it's a must-see stop for any visit.</p>
+        <div class="media">
+        <img src="images/praguecastle.jpeg" alt="prague castle" width="auto" height="400">
+        </div>
+        </div>
       </section>
 
     
     <!-- =========================================================
     STEP 5: Two secondary content blocks + CTA section 
     ========================================================= -->
-      <section>
-        <h2>Hidden Gems</h2>
-          <p>Looking for something off the beaten path? These are my top picks. </p>
+      <section class="secondary">
+        <div class="container secondary-grid">
 
-        <h2>Plan Your Visit</h2>
-          <p>When to go, how to get around, what to budget, and the small tips that make a big difference. </p>
-
-        <h2>Ready to go?</h2>
-          <a href="https://www.skyscanner.com/">Book your flight!</a>
+        
+      <div class="card">
+        <div class="card-image img-a"></div>
+          <div class="card-text">
+            <h3>Hidden Gems</h3>
+            <p>Looking for something off the beaten path? These are my top picks.</p>
+        </div>
+      </div>
+        
+      <div class="card">
+        <div class="card-image img-b"></div>
+          <div class="card-text">
+            <h3>Plan Your Visit</h3>
+            <p>When to go, how to get around, what to budget, and the small tips that make a big difference.</p>
+        </div>
+      </div>
+         
+        </div>
       </section>
 
+
+      <div class="cta">
+        <div class="cta-inner">
+      <h2>Ready to go?</h2>
+          <a href="https://www.skyscanner.com/" class=" btn btn-dark">Book your flight!</a>
+        
+        </div>
+          
     </main>
 
     <!-- =========================================================
     STEP 6: Footer 
     ========================================================= -->
 
-  <footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
     <p>&copy; All rights reserved.</p>
-    <ul>
-      <li><a href="#">Activities</a></li>
-      <li><a href="#">Food</a></li>
-      <li><a href="#">Drink</a></li>
-    </ul>
+    <a href="#">Activities</a>
+    <a href="#">Food</a>
+    <a href="#">Drink</a>
+    </div>
   </footer>
 
 
